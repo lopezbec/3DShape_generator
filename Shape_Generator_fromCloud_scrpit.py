@@ -606,7 +606,7 @@ for ID in range(20):
     writeData(str(ID)+'.txt', action_v, m)
     for axis in ("x", "y", "z"):
         print(axis)
-        for t in tqdm((0,0.25,0.5,0.75,1.0, 1.25,1.5,1.75,2.0,2.25, 2.5,2.75, 3.0, 3.25,3.5,3.75,4.0,4.25,4.5,4.75,5.0,5.25,5.5,5.75,6.0 )):
+        for t in tqdm((0.00,0.25,0.50,0.75,1.00, 1.25,1.50,1.75,2.00,2.25, 2.50,2.75, 3.00, 3.25,3.50,3.75,4.00,4.25,4.50,4.75,5.00,5.25,5.50,5.75,6.00 )):
             
            # all = draw_shape_from_cloud(action_v,t,axis,5)
             save_image(all['np_shape'], axis, t, ID, m, RESOLUTION)
